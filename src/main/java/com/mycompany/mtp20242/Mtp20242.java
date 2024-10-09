@@ -5,6 +5,8 @@
 
 package com.mycompany.mtp20242;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Administrador
@@ -12,6 +14,19 @@ package com.mycompany.mtp20242;
 public class Mtp20242 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("adicione um número: ");
+        int n1 = input.nextInt();
+        
+        System.out.println("adicione outro número: ");
+        int n2 = input.nextInt();
+        
+        int soma = n1 + n2;
+        
+        System.out.println("A soma de " + n1 + " e " + n2 + " é: " + soma);
+
+        input.close();
+
     }
-}
+} 
